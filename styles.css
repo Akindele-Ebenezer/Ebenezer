@@ -529,6 +529,10 @@ nav ul li {
 #ui,
 #ux,
 #web-dev {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	padding: 1rem;
 	height: 44rem;
 }
