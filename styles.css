@@ -254,7 +254,7 @@ h2 {
 	margin: .5rem;
 	width: 2rem;
 }     
-
+ 
 @keyframes load {
 	0% {margin-bottom: 0}
 	50% { }
@@ -272,7 +272,7 @@ h2 {
 	50% {margin-bottom: 10rem; transform: rotateX(360deg)}
 	100% {margin-bottom: 0}
 }
-
+ 
 main {    
 	display: none;
 	margin-bottom: -7rem;
@@ -311,8 +311,15 @@ nav h1 {
 	color: #eee; 
 	margin-bottom: -1.8rem;
 	padding: .5rem;
+	transform: translate(-1.5rem);
 }
 
+#nav-icon {
+	position: absolute;
+	right: .6rem;
+	top: .5rem;
+}
+ 
 nav ul {   
 	float: right;
 }
@@ -321,6 +328,36 @@ nav ul li {
 	display: inline;  
 	margin-inline: .5rem;
 	list-style: none;
+}
+
+.nav-bar-sm-screen { 
+	display: none; 
+	height: 100vh;
+	position: absolute;
+	top: 3rem;
+	width: 97.5vw;
+}
+
+#nav-bar-sm-screen {  
+}
+
+.nav-bar-sm-screen ul {
+	background: rgba(0, 0, 0, .6); 
+}
+
+.nav-bar-sm-screen ul a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+.nav-bar-sm-screen ul li {
+	padding: .5rem;
+}
+
+.nav-bar-sm-screen ul li:hover { 
+	text-decoration: underline;
+	text-decoration-color: tomato;
+	transition: 1s;
 }
 
 #pg-1 {
@@ -607,6 +644,13 @@ nav ul li {
 		 margin-left: 0;
 	} 
 } 
+
+@media (min-width: 848px) {
+	.nav-bar-sm-screen, #nav-icon { 
+		 display: none;
+	} 
+
+}
 
 @media (max-width: 850px) { 
 	#side-links, nav ul {
