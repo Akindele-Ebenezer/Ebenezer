@@ -477,6 +477,7 @@ nav ul li {
 .services img {
 	float: left;
 	margin-inline: 5.5rem; 
+	margin-top: 1.59rem;
 	width: 10rem;
 }
 
@@ -517,8 +518,7 @@ nav ul li {
 }
 
 #ux-img {
-	margin-top: 1.59rem;  
-	transform: translate(-4rem, -.9rem);
+	margin-top: 1.59rem;   
 	width: 15rem;
 }
 
