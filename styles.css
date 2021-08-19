@@ -561,6 +561,10 @@ nav ul li {
 	overflow: hidden;
 	white-space: nowrap;
 }
+
+#whats-app {
+	transform: translate(-4rem, -2rem);
+}
  
 @keyframes welcome {
 	0% {width: 0ch}
