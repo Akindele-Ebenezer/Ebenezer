@@ -538,6 +538,10 @@ nav ul li {
 	height: 44rem;
 }
 
+ui {
+    border-bottom: 0;
+}
+
 #web-dev img { 
 	width: 15rem;
 }
