@@ -275,6 +275,7 @@ h2 {
 
 main {    
 	display: none;
+	margin-bottom: -7rem;
 	overflow: hidden;  
 }
     
