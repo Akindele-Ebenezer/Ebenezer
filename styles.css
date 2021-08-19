@@ -537,8 +537,7 @@ nav ul li {
 	height: 44rem;
 }
 
-#web-dev img {
-	transform: translate(-4rem, .5rem);
+#web-dev img { 
 	width: 15rem;
 }
   
