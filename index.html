@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
 	<link rel='stylesheet' href='styles.css'>
 	<meta charset='UTF-8'>
@@ -8,6 +9,7 @@
 </head>
 
 <body>
+
  <div id='load'>
   <h2>Loading</h2>
   <div class='load'></div>
@@ -26,15 +28,14 @@
 				<li><a href='#form'>CONTACT</a></li> 
 			</ul>	
 			
-			<img id='nav-icon' src='images/nav-icon.PNG' alt='nav-icon'>		
+			<img id='nav-icon' src='images/nav-icon.PNG' alt='nav-icon'> 		
 	</nav>
-	
-<div class='clear'></div>
 
-<!-- page 1 -->
+<div class='clear'></div>	
+ 
     <div id='pg-1'> 
     </div>
-<!-- welcome text -->
+ 
 		<div id='welcome-text'> 
 			<ul>
 		    <h1> I'M AKINDELE EBENEZER</h1>
@@ -45,8 +46,7 @@
 			</ul>
 		</div> 
 <div class='clear'></div>
-
-<!-- page 2 --> 
+  
   <div id='main-2'>
 	<div id='pg-2'> 
           <h1>PROJECTS</h1>
@@ -77,10 +77,9 @@
 	     </div>
 	</div>
  
-<!-- page 3-->
   <div id='wrapper'>
     <div id='pg-3'>
-	    <h1>SERVICES</h2>
+	    <h1>SERVICES</h1>
 	<div id='services'>
 		<div id='web-dev' class='services'>
 		    <img src='images/web-dev.jpg' alt='web-dev'> <br>
@@ -108,7 +107,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 		</div>
 	</div>
     </div> 
-<!-- page 4 -->   
+    
     <div id='pg-4'>
       <h2>SKILLS</h2>
        <div id='skills'>
@@ -128,34 +127,31 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 	</div>
      </div>
     </div>
-
-<!-- page 5 -->
+ 
     <div id='wrap-about'>
 	<div id='about'>
 		<h3>About Me</h3>
 		<p>My name is Akindele Ebenezer Oluwatobi. I'm a <strong>Front End Developer.</strong><br><br> I build well organised and responsive websites from scratch just like this one. My hobbies are Coding, Programming the Web, Playing Musical Instruments and Designing. <br><br>I started coding when I joined the tech industry and the journey has been superb.</p> 
 	</div>
     </div> 
-
-<!-- page 6 --> 
+  
   <div id='cert-wrapper'>
-      <h2 id='cert'>CERTIFICATES</h2>
+      <h2 id='cert'>CERTIFICATIONS</h2>
     <div id='certificates'>
 	<div class='certificates'>
-		<h2>COURSERA</h2>
+		<h2>COURSERA</h2>  
 		<a href='coursera.html' target='_blank'><img src='images/coursera.PNG' alt='certificate-1'></a>
-		<p>HTML, CSS & Javascript <br> for Web Developers</p>
+		<p>HTML, CSS & Javascript <br> for Web Developers</p> 
 	</div>
 
 	<div class='certificates'>
-		<h2>FREE CODE CAMP</h2>
+		<h2>FREE CODE CAMP</h2> 
 		<a href='free-code-camp.html' target='_blank'><img src='images/free-code-camp.png' alt='certificate-2'></a>
 		<p>Responsive Web Design</p>
 	</div>
     </div> 
   </div>
-
-<!-- page 7 -->
+ 
     <div id='form'>
       <form action='mailto:tobi.akindele@gmail.com' method='post'>
        <h2>Message me...</h2><hr>
@@ -196,8 +192,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 	</div>
 
     </div>
- 
-<!-- footer -->
+
       <footer>
 	<div id='footer'>
 	 <div id='footer-nav'>
@@ -227,8 +222,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 </div> 
 </div>
 <p id='copy'>Copyright 2021: &copy;<strong>AKINDELE EBENEZER OLUWATOBI</strong></p>
-
-<!-- nav bar -->
+ 
 <div class='nav-bar-sm-screen'>
 	<ul>
 		<li><a href='#pg-1'>HOME</a></li>
@@ -258,16 +252,24 @@ loadPage();
  
 let navIcon = document.querySelector('#nav-icon');
 let navBar_Sm_Screen = document.querySelector('.nav-bar-sm-screen');
+let navBar_Sm_Screen_Ul = document.querySelector('.nav-bar-sm-screen ul').children;
 
 navIcon.addEventListener('click', () => {
-	navBar_Sm_Screen.classList.toggle('show');
+	navBar_Sm_Screen.classList.toggle('show'); 
 });
+
+for (let i = 0; i < navBar_Sm_Screen_Ul.length; i++) {
+	navBar_Sm_Screen_Ul[i].addEventListener('click', () => {
+		navBar_Sm_Screen.classList.toggle('show'); 
+	})
+}
 
  
 </script>
  
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div id='whats-app' class="elfsight-app-687e7e20-b3e3-4d41-9b43-667df4de893b"></div>
+
 </body>
 
 </html>
