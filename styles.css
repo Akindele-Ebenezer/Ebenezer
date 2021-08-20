@@ -333,20 +333,17 @@ nav ul li {
 .nav-bar-sm-screen { 
 	display: none; 
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 3rem;
 	width: 97.5vw;
 }
-
-#nav-bar-sm-screen {  
-}
-
+ 
 .nav-bar-sm-screen ul {
-	background: rgba(0, 0, 0, .6); 
+	background: rgba(0, 0, 0, .958); 
 }
 
 .nav-bar-sm-screen ul a {
-	color: #ddd;
+	color: #aaa;
 	text-decoration: none;
 }
 
@@ -536,6 +533,10 @@ nav ul li {
 	width: 3rem;
 }
  
+.show {
+	display: block;
+}
+
 #skills, #certificates, #footer  {   
 	display: flex; 
 	flex-flow: row wrap; 
