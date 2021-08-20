@@ -256,6 +256,12 @@ function loadPage() {
 }
 loadPage();
  
+let navIcon = document.querySelector('#nav-icon');
+let navBar_Sm_Screen = document.querySelector('.nav-bar-sm-screen');
+
+navIcon.addEventListener('click', () => {
+	navBar_Sm_Screen.classList.toggle('show');
+});
 
  
 </script>
