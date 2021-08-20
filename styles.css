@@ -708,4 +708,13 @@ nav ul li {
 		
 	}
 
+} 
+
+@media (max-width: 346px) { 
+	nav h1 {
+		transform: translate(-.5rem); 
+		
+	}
+
 }     
+
