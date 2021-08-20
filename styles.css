@@ -7,7 +7,7 @@
 }
 
 a:hover {
-	color: #999;
+	color: #999; 
 }
 
 #about {  
@@ -309,6 +309,7 @@ nav a:hover {
  
 nav h1 {   
 	color: #eee; 
+	display: inline-block;
 	margin-bottom: -1.8rem;
 	padding: .5rem;
 	transform: translate(-1.5rem);
@@ -322,6 +323,7 @@ nav h1 {
  
 nav ul {   
 	float: right;
+	transform: translateY(1.1rem);
 }
 
 nav ul li {  
